@@ -12,6 +12,7 @@ declare type AwsFreertosType = {
     deviceIsConnected(macAddress: string): Promise<boolean>;
     getGattCharacteristicsFromServer(macAddress: string, serviceUuidString: string): void;
     getDeviceServices(deviceUuid: string): Promise<any[]>;
+    setAdvertisingServiceUUIDs(uuids: string[]): void;
 };
 export interface BtDevice {
     name: string;
